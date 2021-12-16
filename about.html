@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="./cube.css">
 </head>
 <body>
 <div class="wrapper">
     <header>
         <div class="header">
-            <h1>Portfolio</h1>
-            <span>hello :)</span>
+            <div class="portfolio">Portfolio</div>
+            <p>hello :)</p>
         </div>
         <nav>
             <ul>
@@ -35,6 +36,17 @@
             </div>
         </aside>
         <section>
+            <div class="svg">
+                <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.832 15H9.90234L4.19922 5.64453V15H1.26953V0.78125H4.19922L9.91211 10.1562V0.78125H12.832V15Z" stroke="black"/>
+                    <path d="M20.0195 7.1875L22.9785 0.78125H26.1816L21.5137 9.84375V15H18.5352V9.84375L13.8672 0.78125H17.0801L20.0195 7.1875Z" stroke="black"/>
+                </svg>
+                <script>
+                    document.querySelectorAll("path").forEach(p=> {
+                        console.log(p.getTotalLength());
+                    })
+                </script>
+            </div>
             <div class="about-me">
                 <h1>About Me</h1>
                 <ol>
@@ -56,6 +68,14 @@
                     </li>
                     <li>MBTI : INFP - 열정적인 중재자</li>
                 </ol>
+            </div>
+            <div class="photocube">
+                <div class="front"><img src="../img/spring.jpg" alt="spring"></div>
+                <div class="back"><img src="../img/autumn.jpg" alt="autumn"></div>
+                <div class="left"><img src="../img/winter.jpg" alt="winter"></div>
+                <div class="right"><img src="../img/summer.jpg" alt="summer"></div>
+                <div class="bottom">bottom</div>
+                <div class="top">top</div>
             </div>
         </section>
     </main>
